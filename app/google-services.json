@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304300818676",
+    "project_id": "car-shop-32af5",
+    "storage_bucket": "car-shop-32af5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304300818676:android:e564ab906ec8e9c37c9ea1",
+        "android_client_info": {
+          "package_name": "com.meianoitedev.carshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE8IxAXPVn0prww-41X18_C-E9siiGB5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

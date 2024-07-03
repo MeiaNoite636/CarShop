@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CarShop</string>
+
+
+    <!--    HomeScreenCard-->
+    <string name="text_price_card_item">PREÇO</string>
+    <string name="text_ano_card_item">ANO</string>
+
+    <!--    HomeScreen-->
+    <string name="text_row_left_home_screen">Carros Populares</string>
+    <string name="text_row_right_home_screen">ver todos</string>
+
+    <!--    BottomNavBar-->
+    <string name="text_bottom_nav_home">Home</string>
+    <string name="text_bottom_nav_favorite">Favoritos</string>
+    <string name="text_bottom_nav_profile">Perfil</string>
+
+    <!--    LoginScreen-->
+    <string name="text_login_screen_email">Email</string>
+    <string name="text_password_screen_email">Senha</string>
+    <string name="text_forgot_password_screen_email">Esqueceu sua senha?</string>
+
+</resources>

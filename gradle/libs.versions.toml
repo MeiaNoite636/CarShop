@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.0"
+agp = "8.5.1"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -9,7 +9,9 @@ lifecycleRuntimeKtx = "2.8.3"
 activityCompose = "1.9.0"
 composeBom = "2024.06.00"
 
-firebaseBom = "33.1.1"
+composeAnimation = "1.6.8"
+
+firebaseBom = "33.1.2"
 
 firebaseAuth = "4.4.2"
 
@@ -26,8 +28,8 @@ ksp = "2.0.0-1.0.22"
 
 composeNavigation = "2.7.7"
 
-kotlinSerialization = "1.7.1"
 firebaseCrashlyticsBuildtools = "3.0.2"
+
 
 room = "2.6.1"
 
@@ -47,15 +49,18 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+#Compose Animation
+compose-animation = { module = "androidx.compose.animation:animation", version.ref = "composeAnimation"}
+
 #Room
 room-lib = { module = "androidx.room:room-runtime", version.ref = "room"}
 room-ksp = {module = "androidx.room:room-compiler", version.ref = "room"}
 room-coroutines = { module = "androidx.room:room-ktx", version.ref = "room"}
 
-
-#Firebase Auth
+#Firebase
 firebase-bom = {module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom"}
 firebase-auth = {module = "com.google.firebase:firebase-auth-ktx"}
+firebase-database = { module = "com.google.firebase:firebase-database"}
 
 #BottomNavigation
 bottom-nav = { module = "androidx.compose.material:material", version.ref = "bottomNavigation"}
@@ -63,7 +68,6 @@ bottom-nav = { module = "androidx.compose.material:material", version.ref = "bot
 #Compose Navigation
 compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 compose-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "composeNavigation"}
-compose-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "composeNavigation"}
 compose-suport = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "composeNavigation"}
 
 #Retrofit
@@ -78,9 +82,6 @@ okhttp-interceptor = { module = "com.squareup.okhttp3:logging-interceptor" }
 dagger-hilt = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
-
-#Kotlin Serialization
-kotlin-serialization = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinSerialization"}
 
 #Compose Icons Extended
 compose-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
@@ -104,3 +105,6 @@ google-services = { id = "com.google.gms.google-services", version.ref = "fireba
 
 #Room
 room-plugin = {id = "androidx.room", version.ref = "room"}
+
+
+

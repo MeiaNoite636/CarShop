@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId = "com.meianoitedev.carshop"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -52,7 +52,7 @@ android {
     }
     buildFeatures {
         compose = true
-        buildConfig =  true
+        buildConfig = true
     }
     packaging {
         resources {
@@ -62,6 +62,7 @@ android {
 }
 
 dependencies {
+
 
     //Retrofit
     implementation(libs.retrofit)
@@ -80,21 +81,21 @@ dependencies {
     //ComposeNavigation
     implementation(libs.compose.navigation)
     implementation(libs.compose.navigation.ui)
-    implementation(libs.compose.fragment)
     implementation(libs.compose.suport)
 
-    //Kotlin Serialization
-    implementation(libs.kotlin.serialization)
-
+    //Compose Animation
+    implementation(libs.compose.animation)
+    
     //ComposeBottomNav
     implementation(libs.bottom.nav)
 
     //ComposeIconsExtended
     implementation(libs.compose.icons.extended)
 
-    //FirebaseAuth
+    //Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
 
     //Room
     implementation(libs.room.coroutines)

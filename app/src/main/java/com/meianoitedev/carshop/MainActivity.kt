@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.navigation.compose.rememberNavController
-import com.meianoitedev.carshop.presentation.MainScreen
+import com.meianoitedev.carshop.navigation.MainGraph
 import com.meianoitedev.carshop.ui.theme.CarShopTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CarShopTheme {
-                MainScreen(navController = rememberNavController())
+                MainGraph(navController = rememberNavController())
             }
         }
     }

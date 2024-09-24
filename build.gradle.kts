@@ -15,4 +15,5 @@ plugins {
 
     //Room
     alias(libs.plugins.room.plugin) apply false
+
 }
